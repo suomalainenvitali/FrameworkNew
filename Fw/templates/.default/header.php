@@ -1,3 +1,4 @@
+<? if(!defined("CORE_CONSTANT") || CORE_CONSTANT !== true) die(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
