@@ -6,7 +6,7 @@ class Config {
     private function __construct() {}
     private function __clone() {}   
     //Метод получения значения конфига по пути
-    public static function get(string $path): string {
+    public static function get(string $path): ?string {
         //Подключение файла с массивом конфигов по пути
         include_once "{$_SERVER["DOCUMENT_ROOT"]}/Fw/config.php";
         //Разбиение строки пути на ступени

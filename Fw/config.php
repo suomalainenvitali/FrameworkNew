@@ -7,9 +7,7 @@ function getConfigs(): array {
             "register" => "register_value"
         ],
         "templates" => [
-            "main" => "main",
-            "new_template" => 2,
-            "old_template" => 3
+            ".default" => ".default",
         ]
     ];
 }
