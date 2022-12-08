@@ -1,4 +1,11 @@
 <?
+
+use Fw\Core\Validation\Validators\Email;
+use Fw\Core\Validation\Validators\MaxLength;
+use Fw\Core\Validation\Validators\MinLength;
+use Fw\Core\Validation\Validators\Number;
+use Fw\Core\Validation\Validators\Phone;
+
 require_once "Fw/init.php";
 
 $params = [
@@ -66,6 +73,16 @@ $APPLICATION->SetProperty("title", "История изменений проек
 $APPLICATION->includeComponent("fw:interface.form", ".default", $params);
 ?>
 <pre>
+    --------------------------------------------------------------------------------------
+    | 5 Этап:                                                                            |
+    | 5.1 Абстрактный класс Validator +                                                  |
+    | 5.2 Создать свои валидаторы:                                                       |
+    | RegExp - который будет проверять значение по регулярному выражению. +              |
+    | InList - из примера, который проверяет содержится ли значение в списке +           |
+    | Email - Наследник RegExp с предопределённым шаблоном регулярного выражения +       |
+    | Phone - Наследник RegExp с предопределённым шаблоном регулярного выражения +       |
+    | MaxLength - создать и доработать MinLength на работу со строками и массивами +     |
+    | Number - является числом +                                                         |
     --------------------------------------------------------------------------------------
     | 4 Этап:                                                                            |
     | 4.1 Стилизовать наш сайт +                                                         |
